@@ -52,6 +52,30 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        /* Printer guide button */
+.card {
+    position: relative;
+}
+
+.guide-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: rgba(99,102,241,0.25);
+    border: 1px solid rgba(99,102,241,0.5);
+    color: white;
+    text-decoration: none;
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease;
+    z-index: 2;
+}
+
+.guide-btn:hover {
+    background: rgba(99,102,241,0.5);
+}
 
         /* ===== CONTAINER ===== */
         .container {
@@ -198,11 +222,13 @@
             <h3>🧹 Housekeeping</h3>
             <p class="card-desc">Maintenance & cleaning services</p>
         </a>
-                <!-- SV4 Printer -->
-<a href="http://172.23.3.200:8000/" target="_blank" class="card">
-    <h3>🖨️ SV4 Printer</h3>
-    <p class="card-desc">Open SV4 printer dashboard (Campus WiFi only)</p>
-</a>
+<div class="card">
+            <a href="printer-guide.pdf" target="_blank" class="guide-btn">Guide</a>
+            <a href="http://172.23.3.200:8000/" target="_blank" style="text-decoration:none; color:white;">
+                <h3>🖨️ SV4 Printer</h3>
+                <p class="card-desc">Open SV4 printer dashboard (Campus WiFi only)</p>
+            </a>
+</div>
         <a href="tel:+919297251195" class="card">
             <h3>📬 SV4 Mail Room</h3>
             <p class="card-desc">Tap to call mail services</p>
@@ -213,11 +239,14 @@
     <h3>🧘 SV4 Yoga Room Booking</h3>
     <p class="card-desc">Send booking request via Outlook</p>
 </a>
-        <!-- LRC 4th Floor Printer -->
-<a href="http://172.18.3.210:8000/" target="_blank" class="card">
-    <h3>🖨️ LRC 4th Floor Printer</h3>
-    <p class="card-desc">Open LRC printer dashboard (Campus WiFi only)</p>
-</a>
+<div class="card">
+    <a href="printer-guide.pdf" target="_blank" class="guide-btn">Guide</a>
+    <a href="http://172.18.3.210:8000/" target="_blank" style="text-decoration:none; color:white;">
+        <h3>🖨️ LRC 4th Floor Printer</h3>
+        <p class="card-desc">Open LRC printer dashboard (Campus WiFi only)</p>
+    </a>
+</div>
+
                 <a href="https://isbem.teamsfm.com/Login.aspx" target="_blank" class="card">
             <h3>📚 LRC Study Room Booking</h3>
             <p class="card-desc">Open study room booking portal</p>
@@ -268,11 +297,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
